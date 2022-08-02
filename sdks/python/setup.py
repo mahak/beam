@@ -219,7 +219,7 @@ if __name__ == '__main__':
         'dill>=0.3.1.1,<0.3.2',
         'cloudpickle>=2.1.0,<3',
         'fastavro>=0.23.6,<2',
-        'grpcio>=1.33.1,<2',
+        'grpcio>=1.33.1,!=1.48.0,<2',
         'hdfs>=2.1.0,<3.0.0',
         'httplib2>=0.8,<0.21.0',
         'numpy>=1.14.3,<1.23.0',
@@ -254,9 +254,9 @@ if __name__ == '__main__':
             'pyyaml>=3.12,<7.0.0',
             'requests_mock>=1.7,<2.0',
             'tenacity>=5.0.2,<6.0',
-            'pytest>=4.4.0,<5.0',
-            'pytest-xdist>=1.29.0,<2',
-            'pytest-timeout>=1.3.3,<2',
+            'pytest>=7.1.2,<8.0',
+            'pytest-xdist>=2.5.0,<3',
+            'pytest-timeout>=2.1.0,<3',
             'scikit-learn>=0.20.0',
             'sqlalchemy>=1.3,<2.0',
             'psycopg2-binary>=2.8.5,<3.0.0',
@@ -266,15 +266,15 @@ if __name__ == '__main__':
           'gcp': [
             'cachetools>=3.1.0,<5',
             'google-apitools>=0.5.31,<0.5.32',
-            # Transitive dep. Upper bound required for google-cloud-spanner v1.
+            # Transitive dep. Required for google-cloud-spanner v1.
             # See: https://github.com/apache/beam/issues/22454
-            'google-api-core<2.8.2',
+            'google-api-core!=2.8.2,<3',
             # NOTE: Maintainers, please do not require google-auth>=2.x.x
             # Until this issue is closed
             # https://github.com/googleapis/google-cloud-python/issues/10566
             'google-auth>=1.18.0,<3',
             'google-auth-httplib2>=0.1.0,<0.2.0',
-            'google-cloud-datastore>=1.8.0,<2',
+            'google-cloud-datastore>=1.8.0,<3',
             'google-cloud-pubsub>=2.1.0,<3',
             'google-cloud-pubsublite>=1.2.0,<2',
             # GCP packages required by tests
