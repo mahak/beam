@@ -57,7 +57,7 @@ require (
 	golang.org/x/sync v0.3.0
 	golang.org/x/sys v0.12.0
 	golang.org/x/text v0.13.0
-	google.golang.org/api v0.140.0
+	google.golang.org/api v0.141.0
 	google.golang.org/genproto v0.0.0-20230821184602-ccc8af3d0e93
 	google.golang.org/grpc v1.58.1
 	google.golang.org/protobuf v1.31.0
@@ -107,7 +107,7 @@ require (
 	github.com/containerd/containerd v1.7.3 // indirect
 	github.com/cpuguy83/dockercfg v0.3.1 // indirect
 	github.com/docker/distribution v2.8.2+incompatible // indirect
-	github.com/docker/docker v24.0.5+incompatible // indirect; but required to resolve issue docker has with go1.20
+	github.com/docker/docker v24.0.5+incompatible // but required to resolve issue docker has with go1.20
 	github.com/docker/go-units v0.5.0 // indirect
 	github.com/envoyproxy/go-control-plane v0.11.1 // indirect
 	github.com/envoyproxy/protoc-gen-validate v1.0.2 // indirect
