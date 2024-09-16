@@ -24,7 +24,7 @@ go 1.21
 
 require (
 	cloud.google.com/go/bigquery v1.62.0
-	cloud.google.com/go/bigtable v1.31.0
+	cloud.google.com/go/bigtable v1.32.0
 	cloud.google.com/go/datastore v1.19.0
 	cloud.google.com/go/profiler v0.4.1
 	cloud.google.com/go/pubsub v1.43.0
